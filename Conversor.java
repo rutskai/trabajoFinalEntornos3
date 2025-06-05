@@ -16,5 +16,15 @@ public class Conversor {
 	public static double redondear(double num) {
 		return Math.round(num * 100) / 100.0;
 	}
+  // Devuelve el número de millas equivalente a los quilómetros que recibe
+	// como parámetro.
+	public static double atmosferas(double mb) {
+		return redondear(mb * MB_A_ATM);
+	}
 
+	// Devuelve el número de millas equivalente a los quilómetros que recibe
+	// como parámetro.
+	public static double milibares(double atmosferas) {
+		return redondear(atmosferas / MB_A_ATM);
+	}
 }
