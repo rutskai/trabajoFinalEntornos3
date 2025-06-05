@@ -29,4 +29,6 @@ public class Conversor {
 		return redondear(millas / KM_A_MILLAS);
 	}
 
+}
+
 
