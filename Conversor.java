@@ -27,4 +27,18 @@ public class Conversor {
 	public static double milibares(double atmosferas) {
 		return redondear(atmosferas / MB_A_ATM);
 	}
+	
+	// Devuelve el número de quilómetros equivalente a las millas que recibe
+	// como parámetro.
+	public static double millas(double km) {
+		return redondear(km * KM_A_MILLAS);
+	}
+
+	// Devuelve el número de millas equivalente a los quilómetros que recibe
+	// como parámetro.
+	public static double km(double millas) {
+		return redondear(millas / KM_A_MILLAS);
+	}
+	
+	
 }
