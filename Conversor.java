@@ -16,5 +16,17 @@ public class Conversor {
 	public static double redondear(double num) {
 		return Math.round(num * 100) / 100.0;
 	}
+	
+	// Devuelve el número de quilómetros equivalente a las millas que recibe
+	// como parámetro.
+	public static double millas(double km) {
+		return redondear(km * KM_A_MILLAS);
+	}
 
-}
+	// Devuelve el número de millas equivalente a los quilómetros que recibe
+	// como parámetro.
+	public static double km(double millas) {
+		return redondear(millas / KM_A_MILLAS);
+	}
+
+
